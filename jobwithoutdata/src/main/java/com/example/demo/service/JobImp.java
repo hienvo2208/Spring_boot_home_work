@@ -8,10 +8,7 @@ import com.example.demo.model.request.CreateJob;
 import com.example.demo.model.request.UpdateJob;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Component
@@ -99,5 +96,20 @@ public class JobImp implements JobService {
         return result;
     }
 
+    @Override
+    public List<Job> findJobByTitleOrDescription(String titleOrDescription) {
+        List<Job> result = jobs.stream().filter(s -> (s.getDescription().toLowerCase().contains(titleOrDescription)) || s.getTitle().toLowerCase().contains(titleOrDescription)).collect(Collectors.toList());
+        if (result.isEmpty()) {
+            throw new NotFoundException("Job list is empty");
+        }
+        return result;
+    }
+
+    public List<Job> findJobByTitleOrDescriptionOrKeyword(Location location, String title) {
+        List<Job> result = jobs.stream().filter(s -> ((s.getTitle().toLowerCase().contains(title)) || s.getTitle().toLowerCase().contains(title)))
+                .filter(s->s.getLocation().equals(location))
+                .collect(Collectors.toList());
+        return result;
+    }
 }
 //

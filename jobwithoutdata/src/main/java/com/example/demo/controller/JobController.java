@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.Job;
+import com.example.demo.entity.Location;
 import com.example.demo.model.request.CreateJob;
 import com.example.demo.model.request.UpdateJob;
 import com.example.demo.service.JobService;
@@ -50,15 +51,27 @@ public class JobController {
         return ResponseEntity.ok("Xoa thanh cong");
     }
 
-    @GetMapping("/sortorderlocation")
+    @GetMapping("/sortbylocation")
     public ResponseEntity<?> getJobSortByLocation(){
         List<Job> list = jobService.sortedJobOrderLocation();
         return ResponseEntity.ok(list);
     }
 
-    @GetMapping("/{salary}")
+    @GetMapping("/salary/{salary}")
     public ResponseEntity<?> getJobSortBySalary(@PathVariable("salary") double salary){
         List<Job> list = jobService.findJobBySalary(salary);
+        return ResponseEntity.ok(list);
+    }
+
+    @GetMapping("keyword/{keyword}")
+    public ResponseEntity<?> getJobByKeyword(@PathVariable("keyword") String keyword){
+        List<Job> list = jobService.findJobByTitleOrDescription(keyword);
+        return ResponseEntity.ok(list);
+    }
+
+    @GetMapping("/query")
+    public ResponseEntity<?> getJobByQuery(@RequestParam("location") Location location, @RequestParam("keyword") String key){
+        List<Job> list = jobService.findJobByTitleOrDescriptionOrKeyword(location,key.toLowerCase());
         return ResponseEntity.ok(list);
     }
 
