@@ -109,6 +109,9 @@ public class JobImp implements JobService {
         List<Job> result = jobs.stream().filter(s -> ((s.getTitle().toLowerCase().contains(title)) || s.getTitle().toLowerCase().contains(title)))
                 .filter(s->s.getLocation().equals(location))
                 .collect(Collectors.toList());
+        if (result.isEmpty()) {
+            throw new NotFoundException("Job list is empty");
+        }
         return result;
     }
 }
