@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{base-layout}">
+
+<head>
+    <title>Danh sách nhà tuyển dụng</title>
+</head>
+
+<body>
+<div layout:fragment="content">
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Tên</th>
+                            <th scope="col">Ngày sinh</th>
+                            <th scope="col">Nghề nghiệp</th>
+                            <th scope="col">Số năm kinh nghiệm</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr th:each="applicant, iStat:${applicants}">
+                            <th scope="row" th:text="${iStat.index} +1"></th>
+                            <td th:text="${applicant.name}"></td>
+                            <td th:text="${applicant.dob}">Otto</td>
+                            <td th:text="${applicant.skill}">@mdo</td>
+                            <td th:text="${applicant.experience}">@mdo</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+
+</html>

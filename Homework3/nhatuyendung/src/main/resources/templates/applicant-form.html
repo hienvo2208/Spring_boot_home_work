@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{base-layout}">
+<head>
+    <title>Welcome to Our Site</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <form action="#" th:action="@{/applicant-form}" th:object="${applicant}" method="post">
+                    <input type="text" placeholder="Họ và tên" th:field="*{name}"/>
+                    <br><br>
+                    <input type="text" placeholder="Ngày sinh" th:field="*{dob}"/>
+                    <br><br>
+                    <input type="text" placeholder="Nghề Nghiệp" th:field="*{skill}"/>
+                    <br><br>
+                    <input type="text" placeholder="Số năm kinh nghiệm" th:field="*{experience}"/>
+                    <br><br>
+                    <button type="submit">Thêm ứng viên</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
