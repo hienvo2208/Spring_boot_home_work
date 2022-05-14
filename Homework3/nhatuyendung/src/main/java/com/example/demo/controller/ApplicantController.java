@@ -29,7 +29,7 @@ public class ApplicantController {
         model.addAttribute("applicant", new ApplicantRequest());
         return "applicant-form";
     }
-//
+
     @PostMapping("/applicant-form")
     public String handlerApplicant(@ModelAttribute("applicantRequest") ApplicantRequest applicantRequest, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
