@@ -6,7 +6,7 @@ Describe:
     Author name: Vo Duc Hien (hachiko3179)
 
 # Some pictures in the project.
-![hinh_1](https://drive.google.com/file/d/1ggC_riM9ntgo8pzaj2R8GMj1_iH1BzkM/view?usp=sharing)
+![hinh_1](C:\Users\hachi\Downloads\300442006_586732373186115_6321858288490297780_n.png)
 
 ![hinh_2](https://drive.google.com/file/d/1b6e9Le5bsaLtnsGUw7vnRFQ6EUDv5_JF/view?usp=sharing)
 
