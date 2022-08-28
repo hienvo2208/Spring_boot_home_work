@@ -1,11 +1,13 @@
 # My project using REACT + SPRING 
 Project, the purpose of manipulating the API.
 Describe:
-    framework: Srping Boot , ReactJs
-    Project name: Manage staff.
-    Author name: Vo Duc Hien (hachiko3179)
+
+    - framework: Srping Boot , ReactJs
+    - Project name: Manage staff.
+    - Author name: Vo Duc Hien (hachiko3179)
 
 # Some pictures in the project.
+
 ![300442006_586732373186115_6321858288490297780_n](https://user-images.githubusercontent.com/91688830/187056823-00de5ae4-686a-4ff4-8262-85cfcadce0fb.png)
 
 
