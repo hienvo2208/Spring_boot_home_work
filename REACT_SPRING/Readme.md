@@ -6,11 +6,14 @@ Describe:
     Author name: Vo Duc Hien (hachiko3179)
 
 # Some pictures in the project.
-![hinh_1](C:\Users\hachi\Downloads\300442006_586732373186115_6321858288490297780_n.png)
+![300442006_586732373186115_6321858288490297780_n](https://user-images.githubusercontent.com/91688830/187056823-00de5ae4-686a-4ff4-8262-85cfcadce0fb.png)
 
-![hinh_2](https://drive.google.com/file/d/1b6e9Le5bsaLtnsGUw7vnRFQ6EUDv5_JF/view?usp=sharing)
 
-![hinh_3](https://drive.google.com/file/d/1xf9QLU_NYtbtOMbNLSr0GZStiFNvjIO1/view?usp=sharing)
+![299002606_602366661265188_2939232117233498068_n](https://user-images.githubusercontent.com/91688830/187056824-63b5b2d0-f889-4529-8a42-cf30be3e2b6e.png)
 
-![hinh_4](https://drive.google.com/file/d/1JUf--WoDM2ELfp96b9JKFA6WDJkvtkvP/view?usp=sharing)
+![291471747_648832842955900_1142836296219332887_n](https://user-images.githubusercontent.com/91688830/187056821-a14084db-5283-45e4-a60a-5012742559d5.png)
 
+
+![296416460_652495569606362_3351599036691181314_n](https://user-images.githubusercontent.com/91688830/187056825-12246276-9ae6-434c-a992-8e1ed1d931c7.png)
+
+# Hachiko3179
